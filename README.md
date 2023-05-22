@@ -1,2 +1,1 @@
-# Panteon-Academy-TappyFishSecondProject
-Panteon-Academy-TappyFishSecondProject
+# Panteon Academy - Tappy Fish - Second Project
