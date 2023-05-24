@@ -7,6 +7,9 @@ public class Fish : MonoBehaviour
     // Değişkenlerin başında alt çizgi görürsek private olduğunu anlayacağız; _rb
     Rigidbody2D _rb;
     public float speed;
+    int angle;
+    int maxAngle = 20;
+    int minAngle = -60;
 
     void Start()
     {
@@ -20,5 +23,20 @@ public class Fish : MonoBehaviour
             _rb.velocity = new Vector2(_rb.velocity.x, speed);
         }
 
+        if (_rb.velocity.y > 0)
+        {
+            if (angle <= maxAngle)
+            {
+                angle = angle + 4;
+            }
+        }
+        else if (_rb.velocity.y < -2.5f)
+        {
+            if (angle > minAngle)
+            {
+                angle = angle - 2;
+            }
+        }
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 }
