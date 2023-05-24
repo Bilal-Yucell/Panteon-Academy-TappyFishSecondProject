@@ -6,6 +6,7 @@ public class Fish : MonoBehaviour
 {
     // Değişkenlerin başında alt çizgi görürsek private olduğunu anlayacağız; _rb
     Rigidbody2D _rb;
+    public float speed;
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class Fish : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _rb.velocity = new Vector2(_rb.velocity.x, 9f);
+            _rb.velocity = new Vector2(_rb.velocity.x, speed);
         }
 
     }
