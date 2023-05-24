@@ -9,12 +9,15 @@ public class Fish : MonoBehaviour
 
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
-        _rb.velocity = new Vector2(_rb.velocity.x, 9f);
+        _rb = GetComponent<Rigidbody2D>(); 
     }
 
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            _rb.velocity = new Vector2(_rb.velocity.x, 9f);
+        }
+
     }
 }
