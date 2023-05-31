@@ -779,6 +779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9
   score: {fileID: 164544255}
+  gameManager: {fileID: 637541034}
+  fishDied: {fileID: -1900343579, guid: 97208990c9a7541a88d1baf3e29b3370, type: 3}
 --- !u!95 &832002579
 Animator:
   serializedVersion: 5
